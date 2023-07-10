@@ -1,0 +1,120 @@
+.App {
+  background-image: url(https://digitalsynopsis.com/wp-content/uploads/2017/07/beautiful-color-ui-gradients-backgrounds-sexy-blue.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%!important;
+}
+.swiper-slide div:nth-child(1){
+  width: 100%!important;
+  height:70vh!important;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #000;
+  opacity: 1;
+  position: relative;
+  background: #bffa3d;
+}
+
+.swiper-pagination-bullet-active {
+  color: #fff;
+  background: #007aff;
+}
+.swiper-pagination span::before{
+  content: "";
+  position: absolute;
+  top: -61px;
+  bottom: 0px;
+  left: -42px;
+  right: 0;
+  height: 60px;
+  background-repeat: no-repeat;
+  width: 100px;
+  z-index: -1;
+  background-size: cover;
+  border-radius: 10px;
+  display: none;
+
+}
+.swiper-pagination span:hover::before {
+  display: block;
+}
+.swiper-pagination span:nth-child(1)::before {
+  background-image: url("../public/video/video4.jpg");
+}
+.swiper-pagination span:nth-child(2)::before {
+  background-image: url("../public/video/video3.jpg");
+}
+.swiper-pagination span:nth-child(3)::before {
+  background-image: url("../public/video/video2.jpg");
+}
+.swiper-pagination span:nth-child(4)::before {
+  background-image: url("../public/video/video1.jpg");
+}
+.video-container {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  z-index: 9999;
+  background-color: black;
+}
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+h1{
+  padding:10px 0px;
+  text-align: center;
+}
+@media screen and (max-width:500px){
+  .video-container {
+    height:300px;
+  }
+}
