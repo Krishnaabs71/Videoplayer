@@ -18,10 +18,10 @@ const VideoComponent = () => {
   };
 
   const videos = [
-    "/video/video4.mp4",
-    "/video/video3.mp4",
-    "/video/video2.mp4",
-    "/video/video1.mp4",
+    "./video/video4.mp4",
+    "./video/video3.mp4",
+    "./video/video2.mp4",
+    "./video/video1.mp4",
   ];
 
   const handleVideoChange = (index) => {
